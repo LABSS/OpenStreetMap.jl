@@ -3,7 +3,7 @@
 ### Copyright 2014              ###
 
 ### Default Speed Limits in Kilometers Per Hour ###
-const SPEED_ROADS_URBAN = Compat.@Dict(
+const SPEED_ROADS_URBAN = Dict(
     1 => 95,    # Motorway
     2 => 72,    # Trunk
     3 => 48,    # Primary
@@ -13,7 +13,7 @@ const SPEED_ROADS_URBAN = Compat.@Dict(
     7 => 8,     # Service
     8 => 5)     # Living street
 
-const SPEED_ROADS_RURAL = Compat.@Dict(
+const SPEED_ROADS_RURAL = Dict(
     1 => 110,
     2 => 90,
     3 => 80,

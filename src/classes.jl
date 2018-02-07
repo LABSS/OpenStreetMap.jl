@@ -6,7 +6,7 @@
 ### into limited, discrete classes for routing and plotting. ###
 
 # Ordered by typical significance
-const ROAD_CLASSES = Compat.@Dict(
+const ROAD_CLASSES = Dict(
     "motorway" => 1,
     "trunk" => 2,
     "primary" => 3,
@@ -28,7 +28,7 @@ const ROAD_CLASSES = Compat.@Dict(
 # Level 2: Sidewalks
 # Level 3: Pedestrians typically allowed but unspecified
 # Level 4: Agricultural or horse paths, etc.
-const PED_CLASSES = Compat.@Dict(
+const PED_CLASSES = Dict(
     "cycleway" => 1,
     "pedestrian" => 1,
     "living_street" => 1,
@@ -53,7 +53,7 @@ const PED_CLASSES = Compat.@Dict(
 # Level 2: Separated bike lanes (tracks)
 # Level 3: Bike lanes
 # Level 4: Bikes typically allowed but not specified
-const CYCLE_CLASSES = Compat.@Dict(
+const CYCLE_CLASSES = Dict(
     "cycleway" => 1,
     "cycleway:track" => 2,
     "cycleway:opposite_track" => 2,
@@ -74,7 +74,7 @@ const CYCLE_CLASSES = Compat.@Dict(
     "service" => 4,
     "unclassified" => 4)
 
-const FEATURE_CLASSES = Compat.@Dict(
+const FEATURE_CLASSES = Dict(
     "amenity" => 1,
     "shop" => 2,
     "building" => 3,
@@ -88,7 +88,7 @@ const FEATURE_CLASSES = Compat.@Dict(
 # Class 3: Civic/Amenity
 # Class 4: Other
 # Class 5: Unclassified ("yes")
-const BUILDING_CLASSES = Compat.@Dict(
+const BUILDING_CLASSES = Dict(
     "accomodation" => 1,
     "apartments" => 1,
     "dormitory" => 1,

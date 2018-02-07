@@ -169,7 +169,7 @@ function plotMap(nodes::@compat(Union{Dict{Int,LLA},Dict{Int,ENU}}) ;
     end
 
     if fontsize > 0
-        attr = Compat.@Dict(:fontsize => fontsize)
+        attr = Dict(:fontsize => fontsize)
         Winston.setattr(p.x1, "label_style", attr)
         Winston.setattr(p.y1, "label_style", attr)
         Winston.setattr(p.x1, "ticklabels_style", attr)

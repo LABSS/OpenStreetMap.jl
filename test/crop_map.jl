@@ -32,7 +32,7 @@ let bounds = Bounds(0, 1, 0, 1)
 
     hwy = first(values(hwys))
     hwy.nodes = collect(1:length(coords))
-    highways = Compat.@Dict(1 => hwy)
+    highways = Dict(1 => hwy)
 
     nodes = Dict{Int,LLA}([(hwy.nodes[i], coords[i]) for i in 1:length(coords)])
     cropMap!(nodes, bounds, highways=highways)
